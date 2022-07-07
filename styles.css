@@ -1,10 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 :root {
   --background: #050801;
-  --font: #222;
+  --header: #252c465b;
+  --header-text: #e5e7eb;
   --border: #333;
-  --screen: #eee;
+  --screen: #a91079;
   --calculator: #aaa;
+  --calcfont: "Raleway", sans-serif;
   --btn: #eee;
   --btn-hover: #ddd;
   --btn-active: #ccc;
@@ -20,12 +23,33 @@ body {
   background-color: var(--background);
 }
 .title {
-  margin-left: 200px;
+  font-family: "Pacifico";
+  color: white;
+  animation: neon 5s infinite;
+  font-size: 3rem;
+  letter-spacing: 2px;
   text-align: center;
+}
+
+@keyframes neon {
+  0%,
+  39%,
+  41%,
+  59%,
+  61%,
+  100% {
+    text-shadow: white 0 0 12px, #ff3aad 0 0 24px, #ff3aad 0 0 36px;
+  }
+
+  40%,
+  60%,
+  75% {
+    text-shadow: none; /* this is just to make it flicker */
+  }
 }
 .Headercontainer {
   width: 100%;
-  background-color: #2e0249;
+  background-color: var(--header);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -34,6 +58,7 @@ body {
   position: relative;
   top: 0;
   left: 0;
+  animation: neon 5s infinite;
   z-index: 9;
 }
 .leftContainer {
@@ -75,7 +100,7 @@ body {
 
 .headerText {
   position: relative;
-  color: #e5e7eb;
+  color: var(--header-text);
   size: 18px;
   width: 27em;
   display: flex;
@@ -118,11 +143,25 @@ a:active {
   align-items: center;
   gap: 20px;
   width: 500px;
-  height: 700px;
-  font-family: "Raleway", sans-serif;
+  height: 600px;
+  font-family: var(--calcfont);
   font-weight: bold;
   justify-content: space-evenly;
-  background: #201818;
+  background: var(--calculator);
+  border: 3px solid white;
+  border-radius: 20px;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #f0f, 0 0 40px #0ff,
+      0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    box-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
 }
 .result-text {
   display: inline-block;
@@ -133,15 +172,14 @@ a:active {
   margin-top: 10px;
   width: 90%;
   height: 10%;
-  background-color: #a91079;
+  background-color: var(--screen);
   line-height: 70px;
   text-align: center;
 }
 .inputs {
   flex: 2;
   width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 22px;
   gap: 5px;
   display: flex;
   flex-wrap: wrap;
