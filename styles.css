@@ -1,0 +1,82 @@
+.title {
+  margin-left: 200px;
+  text-align: center;
+}
+.Headercontainer {
+  width: 100%;
+  background-color: #1f2937;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+.leftContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 16em;
+}
+.logoContainer {
+  margin: 0.7em 0 0.7em 2.5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 8.8em;
+  text-decoration: none;
+}
+.logoImageContainer {
+  display: flex;
+  align-items: center;
+  margin-right: 0.5em;
+}
+.logoImage {
+  width: 2em;
+}
+.logoText {
+  color: white;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+
+  margin: 0 0 0 0.5vw;
+}
+.headerTextContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerText {
+  position: relative;
+  color: #e5e7eb;
+  size: 18px;
+  width: 27em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 2.5vw;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block; /* remove extra space below image */
+}
+a:visited {
+  color: #e5e7eb;
+}
+a:link {
+  color: #e5e7eb;
+}
+a:hover {
+  color: #b8b9bb;
+}
+a:active {
+  color: #818181;
+}
