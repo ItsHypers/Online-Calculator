@@ -6,7 +6,7 @@
   --header-text: #e5e7eb;
   --border: #333;
   --screen: #a91079;
-  --calculator: #aaa;
+  --calculator: rgb(255, 167, 236);
   --calcfont: "Raleway", sans-serif;
   --btn: #eee;
   --btn-hover: #ddd;
@@ -175,6 +175,20 @@ a:active {
   background-color: var(--screen);
   line-height: 70px;
   text-align: center;
+  font-size: 30px;
+}
+.output {
+  width: 90%;
+  height: 100%;
+}
+.output .previous-operand {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.5vw;
+}
+
+.output .current-operand {
+  color: white;
+  font-size: 2vw;
 }
 .inputs {
   flex: 2;
@@ -182,6 +196,7 @@ a:active {
   padding-left: 22px;
   gap: 5px;
   display: flex;
+  font-size: 15px;
   flex-wrap: wrap;
 }
 .module {
@@ -201,6 +216,7 @@ a:active {
 }
 button {
   background-color: #f806cc;
+  font-size: 60px;
 }
 button:hover {
   background: #03e9f4;
@@ -210,6 +226,13 @@ button:hover {
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
 .operator {
+  filter: hue-rotate(110deg);
+  font-size: 2.5vw;
+}
+.minus {
+  filter: hue-rotate(110deg);
+}
+.dot {
   filter: hue-rotate(110deg);
 }
 .number {

@@ -43,38 +43,41 @@
     <section class="flex-container">
         <div class="calc-container module">
           <div class="neon screen"> 
-            <span></span><span></span><span></span><span></span>
-            <p class="result-text">1 + 1 = 2 </p>
+            <div class="result-text output">
+              <div data-previous-operand class="previous-operand"></div>
+              <div data-current-operand class="current-operand"></div>
+            </div>
           </div>
           <div class="inputs">
-              <button class="neon module operator">
+              <button minus class="neon module minus">
                 +/-
               </button>
-              <button class="neon module operator">
-                ^
+              <button operator class="neon module operator">
+                **
               </button>
-              <button class="neon module">
-                back
+              <button operator class="neon module dot">.</button>
+              <button number class="neon module operator">+</button>
+              <button number class="neon module number">7</button>
+              <button number class="neon module number">8</button>
+              <button number class="neon module number">9</button>
+              <button operator class="neon module operator">÷</button>
+              <button number class="neon module number">4</button>
+              <button number class="neon module number">5</button>
+              <button number class="neon module number">6</button>
+              <button operator class="neon module operator">*</button>
+              <button number class="neon module number">1</button>
+              <button number class="neon module number">2</button>
+              <button number class="neon module number">3</button>
+              <button operator class="neon module operator">-</button>
+              <button all-clear class="neon module all-clear">
+                AC
               </button>
-              <button class="neon module">
-                enter
+              <button number class="neon module number">0</button>
+              <button equals class="neon module equals">
+                Enter
               </button>
-              <button class="neon module number">7</button>
-              <button class="neon module number">8</button>
-              <button class="neon module number">9</button>
-              <button class="neon module operator">/</button>
-              <button class="neon module number">4</button>
-              <button class="neon module number">5</button>
-              <button class="neon module number">6</button>
-              <button class="neon module operator">x</button>
-              <button class="neon module number">1</button>
-              <button class="neon module number">2</button>
-              <button class="neon module number">3</button>
-              <button class="neon module operator">-</button>
-              <button class="neon module number">0</button>
-              <button class="neon module">.</button>
-              <button class="neon module operator">%</button>
-              <button class="neon module operator">+</button>
+              <button delete class="neon module delete">Delete</button>
+              
           </div>
         </div>
     </section>
