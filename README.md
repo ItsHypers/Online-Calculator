@@ -11,23 +11,25 @@
 
 👤 **Ryan Thomas**
 
-* Github: [@ItsHypers](https://github.com/ItsHypers)
-* LinkedIn: [@ryanthomas11](https://linkedin.com/in/ryanthomas11)
+- Github: [@ItsHypers](https://github.com/ItsHypers)
+- LinkedIn: [@ryanthomas11](https://linkedin.com/in/ryanthomas11)
 
 <h3>Keyboard Commands:</h3>
 
 I have added in keyboard commands, so you can use your keyboard to input operations and numbers.
 
-- + = +
-- - = -
-- * = *
-- % / ÷ = ÷
-- = Enter = Enter
-- Number Key = Number
-- ; = ** (^)
-- # = +/-
-- . = .
+<ul>
 
+<li> + = + </li>
+<li> - = -</li>
+<li> * = *</li>
+<li> % / ÷ = ÷</li>
+<li> = Enter = Enter</li>
+<li> Number Key = Number</li>
+<li> ; = ** (^)</li>
+<li> # = +/-</li>
+<li> . = .</li>
+</ul>
 
 ## Show your support
 
