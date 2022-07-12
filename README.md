@@ -5,7 +5,7 @@
 
 > A CSS/JS/HTML based online Calculator
 
-### ✨ [Demo](https://itshypers.github.io/Online-Calculator/)
+### ✨ [Live Preview](https://itshypers.github.io/Online-Calculator/)
 
 ## Author
 
