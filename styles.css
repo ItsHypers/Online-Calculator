@@ -183,12 +183,12 @@ a:active {
 }
 .output .previous-operand {
   color: rgba(255, 255, 255, 0.75);
-  font-size: 1.5vw;
+  font-size: 1.3vw;
 }
 
 .output .current-operand {
   color: white;
-  font-size: 2vw;
+  font-size: 1.3vw;
 }
 .inputs {
   flex: 2;

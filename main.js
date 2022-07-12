@@ -48,6 +48,9 @@ class Calculator {
       case "÷":
         computation = prev / current;
         break;
+      case "/":
+        computation = prev / current;
+        break;
       case "**":
         computation = prev ** current;
         break;
@@ -187,6 +190,41 @@ document.addEventListener("keydown", function (event) {
   if (event.key == "Delete") {
     event.preventDefault();
     calculator.clear();
+    calculator.updateDisplay();
+  }
+  if (event.key == "x" || event.key == "*") {
+    event.preventDefault();
+    calculator.chooseOperation("*");
+    calculator.updateDisplay();
+  }
+  if (event.key == "%" || event.key == "÷") {
+    event.preventDefault();
+    calculator.chooseOperation("÷");
+    calculator.updateDisplay();
+  }
+  if (event.key == "-") {
+    event.preventDefault();
+    calculator.chooseOperation("-");
+    calculator.updateDisplay();
+  }
+  if (event.key == "+") {
+    event.preventDefault();
+    calculator.chooseOperation("+");
+    calculator.updateDisplay();
+  }
+  if (event.key == ".") {
+    event.preventDefault();
+    calculator.appendNumber(".");
+    calculator.updateDisplay();
+  }
+  if (event.key == "#") {
+    event.preventDefault();
+    calculator.minusplus();
+    calculator.updateDisplay();
+  }
+  if (event.key == ";") {
+    event.preventDefault();
+    calculator.chooseOperation("**");
     calculator.updateDisplay();
   }
 });
