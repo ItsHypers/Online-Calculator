@@ -14,9 +14,20 @@
 * Github: [@ItsHypers](https://github.com/ItsHypers)
 * LinkedIn: [@ryanthomas11](https://linkedin.com/in/ryanthomas11)
 
+<h3>Keyboard Commands:</h3>
+
+I have added in keyboard commands, so you can use your keyboard to input operations and numbers.
++ = +
+- = -
+* = *
+% / ÷ = ÷
+= Enter = Enter
+Number Key = Number
+; = ** (^)
+# = +/-
+. = .
+
+
 ## Show your support
 
 Give a ⭐️ if this project helped you!
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
