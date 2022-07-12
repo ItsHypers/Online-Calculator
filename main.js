@@ -16,7 +16,7 @@ class Calculator {
   }
 
   dot(number) {
-    if (number === "." && this.currentOperand.includes(".")) return;
+    if (number === "." && this.currentOperand.toString().includes(".")) return;
     this.currentOperand = this.currentOperand.toString() + number.toString();
   }
 
