@@ -17,15 +17,15 @@
 <h3>Keyboard Commands:</h3>
 
 I have added in keyboard commands, so you can use your keyboard to input operations and numbers.
-+ = +
-- = -
-* = *
-% / ÷ = ÷
-= Enter = Enter
-Number Key = Number
-; = ** (^)
-# = +/-
-. = .
+- + = +
+- - = -
+- * = *
+- % / ÷ = ÷
+- = Enter = Enter
+- Number Key = Number
+- ; = ** (^)
+- # = +/-
+- . = .
 
 
 ## Show your support
