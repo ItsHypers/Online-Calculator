@@ -20,7 +20,7 @@ class Calculator {
     this.currentOperand = this.currentOperand.toString() + number.toString();
   }
 
-  operation(operation) {
+  getOperation(operation) {
     if (this.currentOperand === "") return;
     if (this.previousOperand !== "") {
       this.compute();
@@ -61,7 +61,7 @@ class Calculator {
     this.operation = undefined;
     this.previousOperand = "";
   }
-  display(number) {
+  displayNumber(number) {
     const stringNumber = number.toString();
     const integerDigits = parseFloat(stringNumber.split(".")[0]);
     const decimalDigits = stringNumber.split(".")[1];
@@ -91,12 +91,12 @@ class Calculator {
     }
   }
 
-  displayupdate() {
-    this.currentOperandTextElement.innerText = this.display(
+  displayUpdate() {
+    this.currentOperandTextElement.innerText = this.displayNumber(
       this.currentOperand
     );
     if (this.operation != null) {
-      this.previousOperandTextElement.innerText = `${this.display(
+      this.previousOperandTextElement.innerText = `${this.displayNumber(
         this.previousOperand
       )} ${this.operation}`;
     } else {
@@ -125,38 +125,38 @@ const calculator = new Calculator(
 
 numberButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    calculator.appendNumber(button.innerText);
-    calculator.displayupdate();
+    calculator.dot(button.innerText);
+    calculator.displayUpdate();
   });
 });
 
 operationButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    calculator.operation(button.innerText);
-    calculator.displayupdate();
+    calculator.getOperation(button.innerText);
+    calculator.displayUpdate();
   });
 });
 equalsButton.addEventListener("click", (button) => {
   calculator.compute();
-  calculator.displayupdate();
+  calculator.displayUpdate();
 });
 
 minusButton.addEventListener("click", (button) => {
   calculator.minusplus();
-  calculator.displayupdate();
+  calculator.displayUpdate();
 });
 dotButton.addEventListener("click", (button) => {
   calculator.dot(".");
-  calculator.displayupdate();
+  calculator.displayUpdate();
 });
 
 allClearButton.addEventListener("click", (button) => {
   calculator.clear();
-  calculator.displayupdate();
+  calculator.displayUpdate();
 });
 deleteButton.addEventListener("click", (button) => {
   calculator.delete();
-  calculator.displayupdate();
+  calculator.displayUpdate();
 });
 
 document.addEventListener("keydown", function (event) {
@@ -164,67 +164,67 @@ document.addEventListener("keydown", function (event) {
   let patternForOperators = /[+\-*\/]/g;
   if (event.key.match(patternForNumbers)) {
     event.preventDefault();
-    calculator.appendNumber(event.key);
-    calculator.displayupdate();
+    calculator.dot(event.key);
+    calculator.displayUpdate();
   }
   if (event.key === ".") {
     event.preventDefault();
-    calculator.appendNumber(event.key);
-    calculator.displayupdate();
+    calculator.dot(event.key);
+    calculator.displayUpdate();
   }
   if (event.key.match(patternForOperators)) {
     event.preventDefault();
-    calculator.operation(event.key);
-    calculator.displayupdate();
+    calculator.getOperation(event.key);
+    calculator.displayUpdate();
   }
   if (event.key === "Enter" || event.key === "=") {
     event.preventDefault();
     calculator.compute();
-    calculator.displayupdate();
+    calculator.displayUpdate();
   }
   if (event.key === "Backspace") {
     event.preventDefault();
     calculator.delete();
-    calculator.displayupdate();
+    calculator.displayUpdate();
   }
   if (event.key == "Delete") {
     event.preventDefault();
     calculator.clear();
-    calculator.displayupdate();
+    calculator.displayUpdate();
   }
   if (event.key == "x" || event.key == "*") {
     event.preventDefault();
-    calculator.operation("*");
-    calculator.displayupdate();
+    calculator.getOperation("*");
+    calculator.displayUpdate();
   }
   if (event.key == "%" || event.key == "÷") {
     event.preventDefault();
-    calculator.operation("÷");
-    calculator.displayupdate();
+    calculator.getOperation("÷");
+    calculator.displayUpdate();
   }
   if (event.key == "-") {
     event.preventDefault();
-    calculator.operation("-");
-    calculator.displayupdate();
+    calculator.getOperation("-");
+    calculator.displayUpdate();
   }
   if (event.key == "+") {
     event.preventDefault();
-    calculator.operation("+");
-    calculator.displayupdate();
+    calculator.getOperation("+");
+    calculator.displayUpdate();
   }
   if (event.key == ".") {
     event.preventDefault();
-    calculator.appendNumber(".");
-    calculator.displayupdate();
+    calculator.dot(".");
+    calculator.displayUpdate();
   }
   if (event.key == "#") {
     event.preventDefault();
     calculator.minusplus();
-    calculator.displayupdate();
+    calculator.displayUpdate();
   }
   if (event.key == ";") {
     event.preventDefault();
-    calculator.operation("**");
-    calculator.displayupdate();
+    calculator.getOperation("**");
+    calculator.displayUpdate();
   }
 });
