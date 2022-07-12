@@ -17,7 +17,7 @@
 <h3>Keyboard Commands:</h3>
 
 I have added in keyboard commands, so you can use your keyboard to input operations and numbers.
-<h5>
+
 - + = +
 - - = -
 - * = *
@@ -27,7 +27,6 @@ I have added in keyboard commands, so you can use your keyboard to input operati
 - ; = ** (^)
 - # = +/-
 - . = .
-  </h5>
 
 
 ## Show your support
