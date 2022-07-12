@@ -63,4 +63,8 @@
   .output .current-operand {
     font-size: 5vw;
   }
+
+  .screen {
+    height: 70px;
+  }
 }
